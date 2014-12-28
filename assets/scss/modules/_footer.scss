@@ -1,0 +1,93 @@
+.main-footer {
+	// margin-top: 80px;
+	padding: 80px 0;
+	background: darken($header-bg, 25%);
+	color: $footer-text;
+	text-align: center;
+	
+	.foot-line {
+		border: 0;
+		width: 20%;
+		height: 3px;
+		background: maps($colours, neon);
+	}
+
+	a {
+		color: $footer-link;
+		@include transition(all 0.3s ease-in-out);
+
+		&:hover {
+			color: $footer-link-hover;
+		}
+	}
+
+	.footer-left {
+		@include span-columns(12);
+
+		.foot-home {
+			color: #fff;
+			font-size: 1em;
+			font-weight: 700;
+		}
+
+		.twitter {
+			margin-left: 0.5em;
+			color: #55ACEE;
+			opacity: 1;
+
+			&:hover {
+				opacity: 0.8;
+			}
+		}
+
+		ul {
+			list-style: none;
+			margin: 10px 0 0;
+			padding: 0;
+		}
+
+		li {
+			display: inline-block;
+			margin: 0px 10px;
+
+		}
+	}
+
+	.footer-right {
+		@include span-columns(12);
+	}
+
+	p {
+		margin: 0;
+	}
+
+	@media screen and (min-width: 768px) {
+		text-align: left;
+		.footer-left {
+			@include span-columns(6);
+
+			ul {
+				list-style: none;
+				margin: 10px 0 0;
+				padding: 0;
+			}
+
+			li {
+				display: inline-block;
+				margin: 0 16px 0 0;
+				padding: 0 16px 0 0;
+				border-right: 1px solid #333;
+
+				&:nth-child(4) {
+					border: 0;
+				}
+			}
+		}
+
+		.footer-right {
+			@include span-columns(6);
+			float: right;
+			text-align: right;
+		}
+	}
+}

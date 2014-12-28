@@ -1,0 +1,94 @@
+.work {
+	@include clearfix;
+	padding: 40px 0 50px;
+}
+
+.info-header {
+	// border-bottom: 1px solid #eee;
+	// border-top: 1px solid #eee;
+	.work-title {
+		
+	}
+
+	.back-btn {
+		display: none;
+	}
+
+	.work-description {
+		@include span-columns(12);
+	}
+}
+
+.left-info {
+	@include span-columns(12);
+
+	@media screen and (min-width: 768px) {
+		@include span-columns(4);
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.info-header {
+		@include clearfix;
+		margin: 0 0 32px;
+
+		.work-title {
+			margin: 10px 0 0;
+			// line-height: 1;
+		}
+
+		.back-btn {
+			display: block;
+		}
+
+		.work-description {
+			@include span-columns(8);
+		}
+	}
+}
+
+.meta {
+	@include clearfix;
+	padding: 16px 0;
+	margin-bottom: 35px;
+	border-top: 1px solid rgba(#FFFFFF, 0.1);
+	border-bottom: 1px solid rgba(#FFFFFF, 0.1);
+
+	ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+
+		li {
+			display: inline-block;
+			padding: 0;
+			margin-right: 5%;
+		}
+	}
+
+	span {
+		font-weight: 700;
+	}
+}
+
+.mobile-work {
+	@include span-columns(12);
+
+	@media screen and (min-width: 768px) {
+		@include span-columns(4);
+	}
+}
+
+.web-work {
+	@include span-columns(12);
+	background: #eee;
+	padding: 1em;
+}
+
+// PAGE BACKGROUNDS 
+
+#photo-app {
+	color: #FFF;
+	background: rgba(#21463D, 0.8) url('../img/back/photo-app.jpg') no-repeat center;
+	background-size: cover;
+}

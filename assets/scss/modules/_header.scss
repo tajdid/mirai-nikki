@@ -1,0 +1,59 @@
+.nav-contain {
+  @extend .container; 
+}
+
+.main-top {
+  z-index: 100;
+  position: relative;
+  border-bottom: 1px solid #eee;
+  // border-bottom: 2px solid #eee;
+  // background: darken($header-bg, 25%);
+
+  #logo {
+    float: left;
+    .logo {
+      display: block;
+      font-family: $sans-serif;
+      font-size: 1em;
+      font-weight: 700;
+      margin: 0;
+      color: $logo-color;
+    }
+
+    .my-title {
+      display: block;
+      float: left;
+      margin: -2px 0 0 0;
+      font-size: 0.8em;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: rgba($logo-color, 0.4);
+      @include transition(color 0.3s ease-in-out);
+    }
+
+    &:hover {
+      .my-title {
+        color: $logo-color-hover;
+      }
+    }
+  }
+  
+  .topbar {
+    padding: 20px 0;
+    @include clearfix;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .nav-contain {
+    padding: 0;
+    width: 100%;
+  }
+
+  .logo {
+    padding: 0 0 0 1em;
+  }
+  .my-title {
+    padding: 0 0 0 1.3em;
+  }
+}

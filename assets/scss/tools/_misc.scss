@@ -1,0 +1,24 @@
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+img {
+  width: 100%;
+  border: 0;
+}
+
+hr {
+  border-top: 1px solid #ddd;
+}
+
+.group:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}

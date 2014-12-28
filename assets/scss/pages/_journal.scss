@@ -1,0 +1,31 @@
+.journal {
+	@include span-columns(12);
+	margin-top: 40px;
+	@media screen and (min-width: 768px) {
+		@include span-columns(8);
+		float: left;
+	}
+
+	.posts {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+
+		li {
+			border-bottom: 1px solid #eee;
+			margin-bottom: 40px;
+			padding-bottom: 30px;
+
+			a {
+				display: block;
+				font-size: 1.6em;
+				font-weight: 700;
+			}
+		}
+
+		p {
+			margin: 20px 0 0;
+			color: $journal-text;
+		}
+	}
+}
