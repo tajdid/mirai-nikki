@@ -2,6 +2,6 @@
 	@include span-columns(12);
 	margin-top: 15px;
 	@media screen and (min-width: 768px) {
-		@include span-columns(8);
+		// @include span-columns(8);
 	}
 }

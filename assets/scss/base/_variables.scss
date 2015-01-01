@@ -2,31 +2,35 @@
 $colours: (
 	black: #111,
 	white: #FFF,
+	tan: #F3F2EE,
 	orange: #fa5254,
 	dark-grey: #262626,
 	neon: #00e7b4,
 	purple: #333399,
-	blue: #32C3E5
+	blue: #39A3C3
 );
+
+$body-color: #aaa;
+$body-background: rgba(maps($colours, black), 0.95); 
 
 $selection-colour: maps($colours, black);
 
-$link: rgba(maps($colours, black), 0.7);
-$link-hover: rgba($link, 1);
+$link: maps($colours, white);
+$link-hover: maps($colours, orange);
 
 $header-bg:  maps($colours, dark-grey);
-$header-link: maps($colours, neon);
+$header-link: maps($colours, orange);
 $header-text: #aaa;
 
-$top-nav: #666;
-$top-nav-hover: #222;
+$top-nav: maps($colours, white);
+$top-nav-hover: maps($colours, orange);
 
 $footer-text: #aaa;
 $footer-link: #aaa;
 $footer-link-hover: #eee;
 
-$logo-color: maps($colours, black);
-$logo-color-hover: maps($colours, dark-grey);
+$logo-color: maps($colours, white);
+$logo-color-hover: maps($colours, orange);
 
 $work-link: rgba(maps($colours, black), 0);
 $work-link-hover: rgba(maps($colours, black), 0.8);

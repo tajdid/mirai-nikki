@@ -4,7 +4,8 @@
 
 // BASE STYLES
 body {
-	color: maps($colours, black);
+	color: $body-color;
+	background: $body-background;
 	font-family: $sans-serif;
 	font-size: 1em;
 	line-height: 1.6;
@@ -34,7 +35,7 @@ a {
  }
 
  .container {
-	@include outer-container;
+	@include outer-container($local-max-width: 1280px);
 	overflow: hidden;
 	padding: 0 1em;
  }

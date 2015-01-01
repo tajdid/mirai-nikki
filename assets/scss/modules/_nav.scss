@@ -14,18 +14,25 @@
   
   li {
     display: inline-block;
-    margin-left: 20px;
+    margin-left: 40px;
     margin-top: 10px;
   }
 
   a {
+    font-size: 0.9em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
     color: $top-nav;
     font-weight: 700;
     opacity: 1;
-    @include transition(color 0.3s);
+    padding-bottom: 1.5px;
+    border-bottom: 2px solid rgba(maps($colours, orange), 0);
+    @include transition(color 0.3s, padding-bottom 0.3s, border-bottom 0.3s);
 
     &:hover {
       color: $top-nav-hover;
+      padding-bottom: 6px;
+      border-bottom: 2px solid rgba(maps($colours, orange), 1);
     }
   }
 }

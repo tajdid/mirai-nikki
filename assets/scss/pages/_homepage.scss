@@ -1,11 +1,11 @@
 .hero {
 	padding: 80px 0;
-	background: $header-bg url('../img/bg.jpg') no-repeat center;
+	background: $header-bg url('http://www.good.co/blog/wp-content/uploads/2014/07/224163-mad-men-mad-men.jpg')no-repeat top;
 	background-size: cover;
 	@include clearfix;
 
 	@media screen and (min-width: 768px) {
-		height: 100vh;
+		height: 50vh;
 	}
 }
 
