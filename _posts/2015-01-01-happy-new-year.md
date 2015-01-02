@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
-date:   2014-12-28 00:49:26
-categories: jekyll update
-thumb: https://unsplash.imgix.net/photo-1416512107527-34cebecbac33?q=75&w=400&fit=max&fm=jpg&auto=format&s=99713a231ec584c9c69e3bdb3bf8af8d
+title:  "Happy New Year"
+date:   2015-01-01 00:00:00
+categories: update
+thumb: /post-images/true-detective.jpg
 ---
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve --watch`, which launches a web server and auto-regenerates your site when a file is updated.
 

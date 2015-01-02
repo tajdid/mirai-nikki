@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
-date:   2014-12-28 00:49:26
+title:  "This Is My New Post"
+date:   2014-12-30 00:49:26
 categories: jekyll update
-thumb: https://unsplash.imgix.net/photo-1416512107527-34cebecbac33?q=75&w=400&fit=max&fm=jpg&auto=format&s=99713a231ec584c9c69e3bdb3bf8af8d
+thumb: https://unsplash.imgix.net/photo-1414542563971-94513793d046?q=75&w=1080&h=1080&fit=max&fm=jpg&s=f374bd80c543f9b3dac04455df1024bd
 ---
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve --watch`, which launches a web server and auto-regenerates your site when a file is updated.
 
